@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Parmar | Front-End Developer</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="animated-blob" style="top: 5%; left: -10%;"></div>
+
+    <nav class="fixed w-full z-50 px-4 py-4">
+        <div class="max-w-6xl mx-auto glass-card px-6 py-3 rounded-xl">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold gradient-text tracking-tighter">Yash-Portfolio</div>
+
+                <div class="hidden md:flex gap-6 items-center">
+                    <a href="#projects" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Projects</a>
+                    <a href="#skills" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Skills</a>
+                    <a href="#education" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Education</a>
+                </div>
+
+                <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2">
+                    <i id="menu-icon" class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden pt-4 pb-2 border-t border-slate-800 mt-3 animate-fade-in-down">
+                <div class="flex flex-col gap-4 text-center">
+                    <a href="#projects" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Projects</a>
+                    <a href="#skills" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Skills</a>
+                    <a href="#education" class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Education</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center px-6 pt-24">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+            <div class="order-2 md:order-1 text-center md:text-left">
+                <h2 class="text-indigo-400 font-medium mb-3 tracking-widest uppercase text-xs">Front-End Developer</h2>
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight"><span class="gradient-text text-3xl md:text-5xl">Yash Parmar</span></h1>
+                <p class="text-slate-400 mb-8 leading-relaxed mx-auto md:mx-0 max-w-sm text-sm">
+                    Aspiring Front-End Developer seeking an opportunity to start my career in web development. I am to build responsive and user-friendly web applications while continuously improving my technical and problem-solving skills.
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start">
+                    <a href="tel:+918141751525" class="p-3 glass-card rounded-lg text-xl hover:text-indigo-400"><i class="fas fa-phone"></i></a>
+                    <a href="https://linkedin.com/in/yash-parmar" target="_blank" class="p-3 glass-card rounded-lg text-xl hover:text-indigo-400"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yashhp05" target="_blank" class="p-3 glass-card rounded-lg text-xl hover:text-indigo-400"><i class="fab fa-github"></i></a>
+                    <a href="#footer" class="flex items-center gap-2 glass-card px-6 py-3 rounded-lg font-bold text-sm">Contact Me</a>
+                </div>
+            </div>
+            <div class="order-1 md:order-2 flex justify-center">
+                <div class="relative glass-card p-2 rounded-full w-48 h-48 md:w-64 md:h-64 overflow-hidden border-2 border-indigo-500/30">
+                    <img src="resumephoto.jpg" class="w-full h-full object-cover rounded-full grayscale hover:grayscale-0 transition duration-700" alt="Yash Parmar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 text-center">Featured <span class="gradient-text">Projects</span></h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-indigo-400">Gym Management System</h4>
+                        <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 uppercase">C# | SQL Server</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Built a desktop application to manage gym memberships, payments, and attendance using C# Windows Forms and SQL Server for database handling.</p>
+                    <div class="flex gap-2 text-xs font-bold text-indigo-300"><i class="fas fa-check-circle"></i> Desktop App Development</div>
+                </div>
+                <div class="glass-card p-8 rounded-3xl">
+                    <div class="flex justify-between items-start mb-4">
+                        <h4 class="text-xl font-bold text-purple-400">Blood Bank Donor Management</h4>
+                        <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 uppercase">PHP | MySQL | Bootstrap</span>
+                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">Designed and developed a web application to manage donor registrations, blood requests, and admin controls with a responsive Bootstrap interface.</p>
+                    <div class="flex gap-2 text-xs font-bold text-purple-300"><i class="fas fa-check-circle"></i> Full Stack Web</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 bg-white/5 px-6">
+        <div class="max-w-6xl mx-auto">
+            <h3 class="text-2xl font-bold mb-10 text-center uppercase tracking-widest">Technical <span class="gradient-text">Toolkit</span></h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-indigo-400 text-xs font-bold mb-2 uppercase">Front-End</p>
+                    <p class="text-sm">Html5, Css3, JavaScript(ES6+), React.js</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-purple-400 text-xs font-bold mb-2 uppercase">Styling</p>
+                    <p class="text-sm">Tailwind Css, Bootstrap</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <p class="text-pink-400 text-xs font-bold mb-2 uppercase">Tools & Technology</p>
+                    <p class="text-sm">Git & Github, Vs Code, Chrome DevTools</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 px-6 max-w-3xl mx-auto">
+        <h3 class="text-2xl font-bold mb-8 flex items-center gap-3"><i class="fas fa-graduation-cap text-indigo-500"></i> Education</h3>
+        <div class="space-y-6 border-l-2 border-slate-800 pl-6">
+            <div class="relative">
+                <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-indigo-600 shadow-[0_0_15px_rgba(79,70,229,0.5)]"></div>
+                <h4 class="font-bold text-lg">BCA- Bachelor Of Computer Application (2023-2026)</h4>
+                <p class="text-slate-400 text-sm">Shree Saurashtra College Of Mgt And Computer Science- Atkot.</p>
+            </div>
+            <div class="relative opacity-80">
+                <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-700"></div>
+                <h4 class="font-bold text-sm">12th Standard Commerce (Mar-2023)</h4>
+                <p class="text-slate-500 text-xs">Shree Umiya Saksanik Sankul Rupavati.</p>
+            </div>
+            <div class="relative opacity-80">
+                <div class="absolute -left-[31px] top-1 w-4 h-4 rounded-full bg-slate-700"></div>
+                <h4 class="font-bold text-sm">10th Standard (May-2021)</h4>
+                <p class="text-slate-500 text-xs">M.B.Ajmera High-School Vinchhiya.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="pt-20 pb-10 px-6 bg-slate-900/50 border-t border-slate-800/50 relative overflow-hidden">
+        <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-64 h-64 bg-indigo-500/10 blur-[100px] rounded-full"></div>
+
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-12 mb-16 text-center md:text-left">
+                <div class="space-y-4">
+                    <h4 class="text-2xl font-bold gradient-text tracking-tighter">Yash Parmar</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
+                        Building modern web solutions and exploring the future of front-end development.
+                    </p>
+                    <div class="flex justify-center md:justify-start gap-4 pt-2">
+                        <a href="https://linkedin.com/in/yash-parmar" target="_blank" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 transition-all border-slate-700">
+                            <i class="fab fa-linkedin-in text-sm"></i>
+                        </a>
+                        <a href="mailto:yashmistry055@gmail.com" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 transition-all border-slate-700">
+                            <i class="fas fa-envelope text-sm"></i>
+                        </a>
+                        <a href="https://github.com/yashhp05" class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 transition-all border-slate-700">
+                            <i class="fab fa-github text-sm"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="text-white font-bold uppercase tracking-widest text-xs">Explore</h5>
+                    <ul class="text-slate-400 text-sm space-y-3 font-medium">
+                        <li><a href="#projects" class="hover:text-indigo-400 transition">Projects Showcase</a></li>
+                        <li><a href="#skills" class="hover:text-indigo-400 transition">Skills & Toolkit</a></li>
+                        <li><a href="#education" class="hover:text-indigo-400 transition">Education Journey</a></li>
+                    </ul>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="text-white font-bold uppercase tracking-widest text-xs">Based In</h5>
+                    <div class="glass-card p-6 rounded-2xl border-slate-800 flex items-start gap-4 text-left">
+                        <div class="w-10 h-10 bg-indigo-500/10 rounded-xl flex items-center justify-center shrink-0">
+                            <i class="fas fa-location-arrow text-indigo-400"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold text-sm">Vinchhiya-360055, Gujarat, India.</p>
+                            <p class="text-slate-500 text-xs mt-1">Jasdan Road, Vinchhiya.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-10 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-slate-500 text-[10px] uppercase tracking-[0.4em]">
+                    © 2026 Yash Parmar. All rights reserved.
+                </p>
+                <div class="flex items-center gap-2 text-slate-500 text-[10px] font-bold">
+                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> 
+                    AVAILABLE FOR NEW OPPORTUNITIES
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="script.js"></script>
+
+</body>
+</html>
