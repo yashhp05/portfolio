@@ -1,371 +1,1037 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yash Parmar | Front-End Developer</title>
+
+    <title>Yash Parmar | Web Developer | Network & Automation</title>
+
+    <meta name="description"
+        content="Yash Parmar - BCA Graduate, Web Developer, Networking and Technical Support enthusiast with knowledge of Laravel, React.js, RTU, SCADA and Industrial Communication.">
+
+    <meta name="keywords"
+        content="Yash Parmar, Web Developer, Laravel Developer, React Developer, Network Support, MikroTik, RTU, SCADA">
+
+    <meta name="author" content="Yash Parmar">
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="animated-blob" style="top: 5%; left: -10%;"></div>
+    <!-- BACKGROUND BLOBS -->
+    <div class="animated-blob blob-one"></div>
+    <div class="animated-blob blob-two"></div>
 
+    <!-- NAVBAR -->
     <nav class="fixed w-full z-50 px-4 py-4">
         <div class="max-w-6xl mx-auto glass-card px-6 py-3 rounded-xl">
+
             <div class="flex justify-between items-center">
-                <div class="text-xl font-bold gradient-text tracking-tighter">Yash-Portfolio</div>
 
+                <a href="#home" class="text-xl font-bold gradient-text tracking-tighter">
+                    Yash-Portfolio<span class="text-indigo-400">.</span>
+                </a>
+
+                <!-- DESKTOP MENU -->
                 <div class="hidden md:flex gap-6 items-center">
-                    <a href="#about"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">About</a>
-                    <a href="#projects"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Projects</a>
-                    <a href="#skills"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Skills</a>
-                    <a href="#education"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Education</a>
-                    <a href="#contact"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Contact</a>
+
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+
                 </div>
 
-                <button id="menu-btn" class="md:hidden text-white focus:outline-none p-2">
+                <!-- MOBILE BUTTON -->
+                <button id="menu-btn"
+                    class="md:hidden text-white p-2"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+
                     <i id="menu-icon" class="fas fa-bars text-xl"></i>
+
                 </button>
+
             </div>
 
+            <!-- MOBILE MENU -->
             <div id="mobile-menu"
-                class="hidden md:hidden pt-4 pb-2 border-t border-slate-800 mt-3 animate-fade-in-down">
+                class="hidden md:hidden pt-4 pb-2 border-t border-slate-800 mt-3">
+
                 <div class="flex flex-col gap-4 text-center">
-                    <a href="#projects"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Projects</a>
-                    <a href="#skills"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Skills</a>
-                    <a href="#education"
-                        class="text-xs uppercase tracking-widest text-slate-400 hover:text-white transition">Education</a>
+
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+
                 </div>
             </div>
+
         </div>
     </nav>
 
-    <section id="about" class="min-h-screen flex items-center justify-center px-6 pt-24">
+
+    <!-- HERO SECTION -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center px-6 pt-28">
+
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
-            <!-- Left Content -->
             <div class="text-center md:text-left">
-                <h2 class="text-indigo-400 font-medium mb-3 tracking-widest uppercase text-xs">
-                    Web Developer | Technical Support | RTU & SCADA
-                </h2>
 
-                <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                    I'm <span class="gradient-text">Yash Parmar</span>
+                <span class="text-indigo-400 font-semibold tracking-widest uppercase text-xs">
+                    Welcome to my Portfolio
+                </span>
+
+                <h1 class="text-5xl md:text-7xl font-bold mt-5 mb-6 leading-tight">
+                    Hi, I'm <span class="gradient-text">Yash Parmar</span>
                 </h1>
 
-                <p class="text-slate-400 mb-10 leading-relaxed max-w-xl text-base md:text-lg">
-                    Web Developer with hands-on experience in React.js, Laravel, PHP, JavaScript,
-                    and MySQL, along with knowledge of Technical Support, RTU, SCADA,
-                    Energy Monitoring, Modbus RTU/TCP, and remote commissioning.
-                    Passionate about practical problem-solving and continuously improving
-                    both software and industrial automation skills.
+                <h2 class="text-lg md:text-xl text-slate-300 font-semibold mb-5">
+                    Web Developer | Networking | Technical Support
+                </h2>
+
+                <p class="text-slate-400 mb-8 leading-relaxed max-w-xl text-base md:text-lg">
+
+                    BCA Graduate with knowledge of Web Development, Networking
+                    and Industrial Automation. Skilled in React.js, Laravel,
+                    PHP, JavaScript and MySQL, along with networking fundamentals,
+                    RTU, SCADA, Energy Monitoring and Modbus Communication.
+
+                    Passionate about developing practical solutions,
+                    troubleshooting technical problems and continuously
+                    learning new technologies.
+
                 </p>
 
-                <div class="flex flex-wrap gap-4 justify-center md:justify-start items-center">
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
+
                     <a href="resume.pdf" download
-                        class="glass-card px-8 py-4 rounded-full font-bold text-sm hover:bg-indigo-600/20 transition-all duration-300">
-                        <i class="fas fa-download mr-2"></i>Download Resume
+                        class="bg-indigo-600 hover:bg-indigo-700 px-7 py-4 rounded-full font-bold text-sm transition">
+
+                        <i class="fas fa-download mr-2"></i>
+                        Download Resume
+
                     </a>
+
+                    <a href="#contact"
+                        class="glass-card px-7 py-4 rounded-full font-bold text-sm hover:border-indigo-500 transition">
+
+                        <i class="fas fa-envelope mr-2"></i>
+                        Contact Me
+
+                    </a>
+
                 </div>
+
+                <!-- SOCIAL LINKS -->
+                <div class="flex gap-5 mt-9 justify-center md:justify-start text-xl">
+
+                    <a href="https://www.linkedin.com/in/yash-parmar-02122k5/"
+                        target="_blank" rel="noopener noreferrer"
+                        class="social-icon text-slate-400 hover:text-indigo-400"
+                        aria-label="LinkedIn">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="https://github.com/yashhp05"
+                        target="_blank" rel="noopener noreferrer"
+                        class="social-icon text-slate-400 hover:text-indigo-400"
+                        aria-label="GitHub">
+
+                        <i class="fab fa-github"></i>
+
+                    </a>
+
+                    <a href="mailto:yashhparmar02@gmail.com"
+                        class="social-icon text-slate-400 hover:text-indigo-400"
+                        aria-label="Email">
+
+                        <i class="fas fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
             </div>
 
-            <!-- Right Image -->
+
+            <!-- PROFILE IMAGE -->
             <div class="flex justify-center">
+
                 <div class="relative">
+
                     <div class="absolute inset-0 bg-indigo-500 blur-3xl opacity-30 rounded-full"></div>
 
-                    <img src="resumepic.jpg" alt="Yash Parmar"
-                        class="relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-indigo-500 shadow-2xl hover:scale-105 transition duration-500">
+                    <img src="resumepic.jpg"
+                        alt="Professional Profile Photo"
+                        class="profile-image relative w-72 h-72 md:w-96 md:h-96 rounded-full object-cover border-4 border-indigo-500 shadow-2xl">
+
                 </div>
+
             </div>
 
         </div>
+
     </section>
 
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 px-6 bg-white/5">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h3 class="text-3xl font-bold mb-10 text-center">
+                About <span class="gradient-text">Me</span>
+            </h3>
+
+            <div class="glass-card p-8 md:p-10 rounded-3xl">
+
+                <p class="text-slate-300 leading-8 text-base md:text-lg">
+
+                    I am a Bachelor of Computer Applications (BCA) graduate
+                    from Saurashtra University with an interest in Web
+                    Development, Networking and Industrial Automation.
+
+                    My technical knowledge includes building responsive
+                    web applications using React.js, Laravel, PHP,
+                    JavaScript, MySQL and Bootstrap.
+
+                    Along with software development, I have knowledge of
+                    networking concepts such as TCP/IP, IP Addressing,
+                    LAN/WAN, Router Configuration and Network Troubleshooting.
+
+                    I am also interested in Industrial Automation technologies
+                    including RTU, SCADA, Energy Monitoring, Modbus RTU/TCP
+                    and RS-485 communication.
+
+                    I enjoy learning new technologies, solving practical
+                    problems and improving my technical skills.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS SECTION -->
     <section id="projects" class="py-20 px-6">
+
         <div class="max-w-6xl mx-auto">
+
             <h3 class="text-3xl font-bold mb-12 text-center">
                 Featured <span class="gradient-text">Projects</span>
             </h3>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
 
-                <!-- Gym Management System -->
-                <div
-                    class="glass-card p-8 rounded-3xl hover:border-indigo-500/50 transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xl font-bold text-indigo-400">Gym Management System</h4>
-                        <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 uppercase">
+                <!-- GYM PROJECT -->
+                <div class="glass-card p-8 rounded-3xl">
+
+                    <div class="flex justify-between items-start mb-5">
+
+                        <i class="fas fa-dumbbell text-3xl text-indigo-400"></i>
+
+                        <span class="text-xs bg-slate-800 px-3 py-2 rounded-lg text-slate-300">
                             C# | SQL Server
                         </span>
+
                     </div>
 
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                        Built a desktop application to manage gym memberships, payments, and attendance using C# Windows
-                        Forms and SQL Server.
+                    <h4 class="text-xl font-bold mb-4 text-indigo-400">
+                        Gym Management System
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-7 mb-5">
+
+                        Developed a desktop application to manage gym
+                        memberships, payment records and attendance
+                        using C# Windows Forms and SQL Server.
+
                     </p>
 
-                    <div class="flex gap-2 text-xs font-bold text-indigo-300">
-                        <i class="fas fa-check-circle"></i>
-                        Desktop App Development
-                    </div>
+                    <p class="text-xs font-bold text-indigo-300">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Desktop Application Development
+                    </p>
+
                 </div>
 
-                <!-- Blood Bank -->
-                <div
-                    class="glass-card p-8 rounded-3xl hover:border-purple-500/50 transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xl font-bold text-purple-400">Blood Bank Donor Management</h4>
-                        <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 uppercase">
+
+                <!-- BLOOD BANK PROJECT -->
+                <div class="glass-card p-8 rounded-3xl">
+
+                    <div class="flex justify-between items-start mb-5">
+
+                        <i class="fas fa-heartbeat text-3xl text-purple-400"></i>
+
+                        <span class="text-xs bg-slate-800 px-3 py-2 rounded-lg text-slate-300">
                             PHP | MySQL | Bootstrap
                         </span>
+
                     </div>
 
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                        Designed and developed a web application to manage donor registrations, blood requests, and
-                        admin controls with a responsive Bootstrap interface.
+                    <h4 class="text-xl font-bold mb-4 text-purple-400">
+                        Blood Bank Donor Management
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-7 mb-5">
+
+                        Designed a web application to manage donor
+                        registrations, blood requests and administrative
+                        controls with a responsive Bootstrap interface.
+
                     </p>
 
-                    <div class="flex gap-2 text-xs font-bold text-purple-300">
-                        <i class="fas fa-check-circle"></i>
+                    <p class="text-xs font-bold text-purple-300">
+                        <i class="fas fa-check-circle mr-2"></i>
                         Full Stack Web Development
-                    </div>
+                    </p>
+
                 </div>
 
-                <!-- Blog Website -->
-                <div
-                    class="glass-card p-8 rounded-3xl hover:border-pink-500/50 transform hover:-translate-y-2 transition-all duration-300">
-                    <div class="flex justify-between items-start mb-4">
-                        <h4 class="text-xl font-bold text-pink-400">Blog Website</h4>
-                        <span class="text-[10px] bg-slate-800 px-2 py-1 rounded text-slate-400 uppercase">
-                            Laravel | PHP | MySQL | Bootstrap
+                <!-- Student Placement Managem Systeentm PROJECT -->
+<div class="glass-card p-8 rounded-3xl">
+
+    <div class="flex justify-between items-start mb-5">
+
+        <i class="fas fa-user-graduate text-3xl text-blue-400"></i>
+
+        <span class="text-xs bg-slate-800 px-3 py-2 rounded-lg text-slate-300">
+            PHP | MySQL | Bootstrap
+        </span>
+
+    </div>
+
+    <h4 class="text-xl font-bold mb-4 text-blue-400">
+        Student Placement Managem Systeentm
+    </h4>
+
+    <p class="text-sm text-slate-400 leading-7 mb-5">
+
+        Developed a web-based placement management system using PHP
+        and MySQL. Implemented student registration, login, company
+        management, job listings and placement application management
+        with separate Admin and Student modules.
+
+    </p>
+
+    <p class="text-xs font-bold text-blue-300">
+        <i class="fas fa-check-circle mr-2"></i>
+        Full Stack PHP Development
+    </p>
+
+</div>
+
+
+                <!-- BLOG PROJECT -->
+                <div class="glass-card p-8 rounded-3xl">
+
+                    <div class="flex justify-between items-start mb-5">
+
+                        <i class="fas fa-blog text-3xl text-pink-400"></i>
+
+                        <span class="text-xs bg-slate-800 px-3 py-2 rounded-lg text-slate-300">
+                            Laravel | PHP | MySQL
                         </span>
+
                     </div>
 
-                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
-                        Developed a responsive blog website using Laravel and MySQL with an admin dashboard. Implemented
-                        CRUD operations for blog posts and categories, integrated authentication, and built a responsive
-                        user interface using Bootstrap while following the Laravel MVC architecture.
+                    <h4 class="text-xl font-bold mb-4 text-pink-400">
+                        Blog Website
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-7 mb-5">
+
+                        Developed a full-stack blog platform using Laravel
+                        and MySQL. Implemented authentication, CRUD
+                        operations, post management, categories and
+                        an admin dashboard following MVC architecture.
+
                     </p>
 
-                    <div class="flex gap-2 text-xs font-bold text-pink-300">
-                        <i class="fas fa-check-circle"></i>
+                    <p class="text-xs font-bold text-pink-300">
+                        <i class="fas fa-check-circle mr-2"></i>
                         Full Stack Laravel Development
+                    </p>
+
+                </div>
+
+
+                <!-- TIFFIN PROJECT -->
+                <div class="glass-card p-8 rounded-3xl">
+
+                    <div class="flex justify-between items-start mb-5">
+
+                        <i class="fas fa-utensils text-3xl text-emerald-400"></i>
+
+                        <span class="text-xs bg-slate-800 px-3 py-2 rounded-lg text-slate-300">
+                            Django | Python | SQLite
+                        </span>
+
                     </div>
+
+                    <h4 class="text-xl font-bold mb-4 text-emerald-400">
+                        Online Tiffin Service
+                    </h4>
+
+                    <p class="text-sm text-slate-400 leading-7 mb-5">
+
+                        Built a web application to manage tiffin orders,
+                        meal subscriptions and meal plans using
+                        Python Django and SQLite.
+
+                    </p>
+
+                    <p class="text-xs font-bold text-emerald-300">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Python Web Development
+                    </p>
+
                 </div>
 
             </div>
+
         </div>
+
     </section>
 
+
+    <!-- SKILLS SECTION -->
     <section id="skills" class="py-20 bg-white/5 px-6">
+
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-2xl font-bold mb-10 text-center uppercase tracking-widest">
+
+            <h3 class="text-3xl font-bold mb-12 text-center uppercase tracking-widest">
                 Technical <span class="gradient-text">Skills</span>
             </h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-                <!-- Languages -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-indigo-900/10 transition-colors">
-                    <p class="text-indigo-400 text-xs font-bold mb-3 uppercase">Languages</p>
-                    <p class="text-sm leading-7">
+                <!-- PROGRAMMING -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-code text-2xl text-indigo-400 mb-4"></i>
+
+                    <p class="text-indigo-400 text-xs font-bold mb-3 uppercase">
+                        Programming Languages
+                    </p>
+
+                    <p class="text-sm text-slate-300 leading-8">
                         JavaScript (ES6+), PHP, HTML5, CSS3
                     </p>
+
                 </div>
 
-                <!-- Frameworks -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-purple-900/10 transition-colors">
+
+                <!-- FRAMEWORKS -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-layer-group text-2xl text-purple-400 mb-4"></i>
+
                     <p class="text-purple-400 text-xs font-bold mb-3 uppercase">
                         Libraries & Frameworks
                     </p>
-                    <p class="text-sm leading-7">
+
+                    <p class="text-sm text-slate-300 leading-8">
                         React.js, Laravel, Tailwind CSS, Bootstrap, REST API
                     </p>
+
                 </div>
 
-                <!-- CMS -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-pink-900/10 transition-colors">
-                    <p class="text-pink-400 text-xs font-bold mb-3 uppercase">CMS</p>
-                    <p class="text-sm leading-7">
-                        WordPress, Elementor, WooCommerce
+
+                <!-- DATABASE -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-database text-2xl text-green-400 mb-4"></i>
+
+                    <p class="text-green-400 text-xs font-bold mb-3 uppercase">
+                        Database
                     </p>
+
+                    <p class="text-sm text-slate-300 leading-8">
+                        MySQL, MongoDB, SQLite, SQL Server
+                    </p>
+
                 </div>
 
-                <!-- Database -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-green-900/10 transition-colors">
-                    <p class="text-green-400 text-xs font-bold mb-3 uppercase">Database</p>
-                    <p class="text-sm leading-7">
-                        MySQL, MongoDB
+
+                <!-- NETWORKING -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-network-wired text-2xl text-blue-400 mb-4"></i>
+
+                    <p class="text-blue-400 text-xs font-bold mb-3 uppercase">
+                        Networking & Infrastructure
                     </p>
+
+                    <p class="text-sm text-slate-300 leading-8">
+
+                        TCP/IP, UDP, OSI Model, IP Addressing,
+                        Subnetting, LAN, WAN, VLAN, DNS, DHCP,
+                        Default Gateway, Ethernet Networking,
+                        Basic Network Troubleshooting
+
+                    </p>
+
                 </div>
 
-                <!-- Tools -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-yellow-900/10 transition-colors">
-                    <p class="text-yellow-400 text-xs font-bold mb-3 uppercase">
-                        Tools & Technologies
+
+                <!-- MIKROTIK -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-router text-2xl text-orange-400 mb-4"></i>
+
+                    <p class="text-orange-400 text-xs font-bold mb-3 uppercase">
+                        Router & Network Support
                     </p>
-                    <p class="text-sm leading-7">
-                        Git & GitHub, VS Code, Chrome DevTools, XAMPP, Composer, npm
+
+                    <p class="text-sm text-slate-300 leading-8">
+
+                        MikroTik Router Configuration,
+                        WinBox, Router & Switch Basics,
+                        Network Diagnostics, Connectivity
+                        Troubleshooting
+
                     </p>
+
                 </div>
-                <!-- Technical Support & Automation -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-cyan-900/10 transition-colors">
+
+
+                <!-- TECHNICAL SUPPORT -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-headset text-2xl text-cyan-400 mb-4"></i>
+
                     <p class="text-cyan-400 text-xs font-bold mb-3 uppercase">
                         Technical Support & Automation
                     </p>
-                    <p class="text-sm leading-7">
-                        Technical Support, RTU, SCADA, Energy Monitoring, Remote Commissioning,
+
+                    <p class="text-sm text-slate-300 leading-8">
+
+                        Technical Support, RTU, SCADA,
+                        Energy Monitoring, Remote Commissioning,
                         PLC Basics, DI/DO, AI/AO
+
                     </p>
+
                 </div>
 
-                <!-- Industrial Communication -->
-                <div class="glass-card p-6 rounded-2xl hover:bg-emerald-900/10 transition-colors">
+
+                <!-- INDUSTRIAL COMMUNICATION -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-industry text-2xl text-emerald-400 mb-4"></i>
+
                     <p class="text-emerald-400 text-xs font-bold mb-3 uppercase">
                         Industrial Communication
                     </p>
-                    <p class="text-sm leading-7">
-                        Modbus RTU, Modbus TCP/IP, RS-485, Ethernet Communication
+
+                    <p class="text-sm text-slate-300 leading-8">
+
+                        Modbus RTU, Modbus TCP/IP,
+                        RS-485, Ethernet Communication
+
                     </p>
+
                 </div>
+
+
+                <!-- CMS -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fab fa-wordpress text-2xl text-pink-400 mb-4"></i>
+
+                    <p class="text-pink-400 text-xs font-bold mb-3 uppercase">
+                        CMS & E-Commerce
+                    </p>
+
+                    <p class="text-sm text-slate-300 leading-8">
+                        WordPress, Elementor, WooCommerce
+                    </p>
+
+                </div>
+
+
+                <!-- TOOLS -->
+                <div class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-tools text-2xl text-yellow-400 mb-4"></i>
+
+                    <p class="text-yellow-400 text-xs font-bold mb-3 uppercase">
+                        Tools & Technologies
+                    </p>
+
+                    <p class="text-sm text-slate-300 leading-8">
+
+                        Git, GitHub, VS Code, Chrome DevTools,
+                        XAMPP, Composer, npm, WinBox
+
+                    </p>
+
+                </div>
+
             </div>
+
         </div>
+
     </section>
 
-    <section id="education" class="py-20 px-6 max-w-3xl mx-auto">
-        <h3 class="text-2xl font-bold mb-8 flex items-center gap-3"><i
-                class="fas fa-graduation-cap text-indigo-500"></i> Education</h3>
-        <div class="space-y-6 border-l-2 border-slate-800 pl-6">
-            <div class="relative pl-4">
-                <div
-                    class="absolute -left-[35px] top-1 w-5 h-5 rounded-full bg-indigo-600 shadow-[0_0_15px_rgba(79,70,229,0.5)] border-4 border-[#0f172a]">
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="experience" class="py-20 px-6 bg-white/5">
+
+        <div class="max-w-5xl mx-auto">
+
+            <h3 class="text-3xl font-bold mb-12 text-center">
+                Work <span class="gradient-text">Experience</span>
+            </h3>
+
+            <div class="space-y-8 border-l-2 border-slate-700 ml-3 pl-7">
+
+                <!-- CURRENT COMPANY -->
+                <div class="glass-card p-8 rounded-3xl relative">
+
+                    <div class="absolute -left-[39px] top-8 w-5 h-5 rounded-full bg-green-500 border-4 border-[#0f172a]"></div>
+
+                    <div class="flex flex-wrap justify-between gap-3">
+
+                        <div>
+
+                            <span class="text-green-400 text-xs font-bold uppercase">
+                                Current Position
+                            </span>
+
+                            <h4 class="text-xl font-bold text-white mt-2">
+                                SCADA Engineer
+                            </h4>
+
+                            <p class="text-indigo-400 font-semibold mt-2">
+                                GRIDSHIELD TECHNOLOGY PVT LTD
+                            </p>
+
+                        </div>
+
+                        <span class="text-xs bg-green-500/10 text-green-400 px-4 py-2 rounded-full h-fit">
+                            Present
+                        </span>
+
+                    </div>
+
+                    <p class="text-slate-400 text-sm mt-4">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        July 2026 - Present
+                    </p>
+
+                    <p class="text-slate-400 text-sm mt-2">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        Ahmedabad, Gujarat, India
+                    </p>
+
+                    <div class="mt-6">
+
+                        <p class="text-sm font-bold text-white mb-3">
+                            Technical Domain
+                        </p>
+
+                        <div class="flex flex-wrap gap-2">
+
+                            <span class="skill-tag">SCADA</span>
+                            <span class="skill-tag">RTU</span>
+                            <span class="skill-tag">Energy Monitoring</span>
+                            <span class="skill-tag">Modbus Communication</span>
+                            <span class="skill-tag">Industrial Networking</span>
+                            <span class="skill-tag">Technical Support</span>
+
+                        </div>
+
+                    </div>
+
                 </div>
-                <h4 class="font-bold text-lg text-white">BCA - Bachelor of Computer Application (2023-2026)</h4>
-                <p class="text-slate-400 text-sm">Shree Saurashtra College Of Mgt And Computer Science- Atkot.</p>
-            </div>
-            <div class="relative pl-4 opacity-80">
-                <div class="absolute -left-[35px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-[#0f172a]">
+
+
+                <!-- PREVIOUS COMPANY -->
+                <div class="glass-card p-8 rounded-3xl relative">
+
+                    <div class="absolute -left-[39px] top-8 w-5 h-5 rounded-full bg-indigo-500 border-4 border-[#0f172a]"></div>
+
+                    <span class="text-indigo-400 text-xs font-bold uppercase">
+                        Previous Experience
+                    </span>
+
+                    <h4 class="text-xl font-bold text-white mt-2">
+                        Sales Executive
+                    </h4>
+
+                    <p class="text-indigo-400 font-semibold mt-2">
+                        Neptune Industries
+                    </p>
+
+                    <p class="text-slate-400 text-sm mt-4">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        April 2026 - May 2026
+                    </p>
+
+                    <p class="text-slate-400 text-sm mt-2">
+                        <i class="fas fa-map-marker-alt mr-2"></i>
+                        Mahesana, Gujarat, India
+                    </p>
+
                 </div>
-                <h4 class="font-bold text-sm text-slate-200">12th Standard Commerce (Mar-2023)</h4>
-                <p class="text-slate-500 text-xs">Shree Umiya Saksanik Sankul Rupavati.</p>
+
             </div>
-            <div class="relative pl-4 opacity-80">
-                <div class="absolute -left-[35px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-[#0f172a]">
-                </div>
-                <h4 class="font-bold text-sm text-slate-200">10th Standard (May-2021)</h4>
-                <p class="text-slate-500 text-xs">M.B.Ajmera High-School Vinchhiya.</p>
-            </div>
+
         </div>
+
     </section>
 
 
-    <section id="contact" class="py-20 px-6">
+    <!-- EDUCATION SECTION -->
+    <section id="education" class="py-20 px-6">
+
+        <div class="max-w-3xl mx-auto">
+
+            <h3 class="text-3xl font-bold mb-12 text-center">
+                Education <span class="gradient-text">Journey</span>
+            </h3>
+
+            <div class="space-y-10 border-l-2 border-slate-800 pl-8">
+
+                <!-- BCA -->
+                <div class="relative">
+
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-indigo-600 border-4 border-[#0f172a]"></div>
+
+                    <span class="text-indigo-400 text-xs font-bold">
+                        2023 - 2026
+                    </span>
+
+                    <h4 class="font-bold text-lg text-white mt-2">
+                        Bachelor of Computer Applications (BCA)
+                    </h4>
+
+                    <p class="text-slate-400 text-sm mt-2">
+                        Shree Saurashtra College of Management and Computer Science, Atkot.
+                    </p>
+
+                    <p class="text-slate-500 text-xs mt-1">
+                        Saurashtra University, Rajkot
+                    </p>
+
+                </div>
+
+
+                <!-- HSC -->
+                <div class="relative">
+
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-[#0f172a]"></div>
+
+                    <span class="text-indigo-400 text-xs font-bold">
+                        2022 - 2023
+                    </span>
+
+                    <h4 class="font-bold text-lg text-white mt-2">
+                        Higher Secondary Certificate (HSC)
+                    </h4>
+
+                    <p class="text-slate-400 text-sm mt-2">
+                        Commerce
+                    </p>
+
+                    <p class="text-slate-500 text-xs mt-1">
+                        Shree Umiya Saksanik Sankul, Rupavati
+                    </p>
+
+                </div>
+
+
+                <!-- SSC -->
+                <div class="relative">
+
+                    <div class="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-slate-700 border-4 border-[#0f172a]"></div>
+
+                    <span class="text-indigo-400 text-xs font-bold">
+                        2020 - 2021
+                    </span>
+
+                    <h4 class="font-bold text-lg text-white mt-2">
+                        Secondary School Certificate (SSC)
+                    </h4>
+
+                    <p class="text-slate-400 text-sm mt-2">
+                        M.B. Ajmera High School, Vinchhiya
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 px-6 bg-white/5">
+
         <div class="max-w-4xl mx-auto text-center">
+
             <h3 class="text-3xl font-bold mb-4">
                 Let's <span class="gradient-text">Connect</span>
             </h3>
-            <p class="text-slate-400 mb-8">
-                Have a project, opportunity, or collaboration in mind? Feel free to reach out.
+
+            <p class="text-slate-400 mb-10 leading-7">
+
+                I am interested in opportunities related to Web Development,
+                Networking, Technical Support and Industrial Automation.
+
+                Feel free to contact me for professional opportunities
+                and collaborations.
+
             </p>
-            <div class="flex flex-wrap justify-center gap-4">
+
+            <div class="grid sm:grid-cols-2 gap-5">
+
+                <!-- EMAIL -->
                 <a href="mailto:yashhparmar02@gmail.com"
-                    class="glass-card px-6 py-3 rounded-full font-bold text-sm hover:text-indigo-400 transition">
-                    <i class="fas fa-envelope mr-2"></i>Email Me
+                    class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-envelope text-2xl text-indigo-400 mb-3"></i>
+
+                    <p class="text-white font-bold text-sm">
+                        Email
+                    </p>
+
+                    <p class="text-slate-400 text-xs mt-2 break-all">
+                        yashhparmar02@gmail.com
+                    </p>
+
                 </a>
-                <a href="https://www.linkedin.com/in/yash-parmar-02122k5/" target="_blank"
-                    class="glass-card px-6 py-3 rounded-full font-bold text-sm hover:text-indigo-400 transition">
-                    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+
+
+                <!-- PHONE -->
+                <a href="tel:+918141751525"
+                    class="glass-card p-6 rounded-2xl">
+
+                    <i class="fas fa-phone text-2xl text-green-400 mb-3"></i>
+
+                    <p class="text-white font-bold text-sm">
+                        Phone
+                    </p>
+
+                    <p class="text-slate-400 text-xs mt-2">
+                        +91 -
+                    </p>
+
                 </a>
-                <a href="https://github.com/yashhp05" target="_blank"
-                    class="glass-card px-6 py-3 rounded-full font-bold text-sm hover:text-indigo-400 transition">
-                    <i class="fab fa-github mr-2"></i>GitHub
+
+
+                <!-- LINKEDIN -->
+                <a href="https://www.linkedin.com/in/yash-parmar-02122k5/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="glass-card p-6 rounded-2xl">
+
+                    <i class="fab fa-linkedin text-2xl text-blue-400 mb-3"></i>
+
+                    <p class="text-white font-bold text-sm">
+                        LinkedIn
+                    </p>
+
+                    <p class="text-slate-400 text-xs mt-2">
+                        Professional Profile
+                    </p>
+
                 </a>
+
+
+                <!-- GITHUB -->
+                <a href="https://github.com/yashhp05"
+                    target="_blank" rel="noopener noreferrer"
+                    class="glass-card p-6 rounded-2xl">
+
+                    <i class="fab fa-github text-2xl text-purple-400 mb-3"></i>
+
+                    <p class="text-white font-bold text-sm">
+                        GitHub
+                    </p>
+
+                    <p class="text-slate-400 text-xs mt-2">
+                        Projects & Repositories
+                    </p>
+
+                </a>
+
             </div>
+
         </div>
+
     </section>
 
-    <footer id="footer" class="pt-20 pb-10 px-6 bg-slate-900/50 border-t border-slate-800/50 relative overflow-hidden">
-        <div class="absolute -bottom-20 left-1/2 -translate-x-1/2 w-64 h-64 bg-indigo-500/10 blur-[100px] rounded-full">
-        </div>
 
-        <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-3 gap-12 mb-16 text-center md:text-left">
-                <div class="space-y-4">
-                    <h4 class="text-2xl font-bold gradient-text tracking-tighter">Yash Parmar</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed max-w-xs mx-auto md:mx-0">
-                        Building modern web solutions while developing expertise in Technical Support, RTU, SCADA, and
-                        industrial automation.
-                    </p>
-                    <div class="flex justify-center md:justify-start gap-4 pt-2">
-                        <a href="https://www.linkedin.com/in/yash-parmar-02122k5/" target="_blank"
-                            class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 hover:scale-110 transition-all border-slate-700">
-                            <i class="fab fa-linkedin-in text-sm"></i>
-                        </a>
-                        <a href="mailto:yashhparmar02@gmail.com"
-                            class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 hover:scale-110 transition-all border-slate-700">
-                            <i class="fas fa-envelope text-sm"></i>
-                        </a>
-                        <a href="https://github.com/yashhp05" target="_blank"
-                            class="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:text-indigo-400 hover:scale-110 transition-all border-slate-700">
-                            <i class="fab fa-github text-sm"></i>
-                        </a>
-                    </div>
-                </div>
+    <!-- FOOTER -->
+    <footer class="py-10 px-6 bg-slate-900/70 border-t border-slate-800">
 
-                <div class="space-y-4">
-                    <h5 class="text-white font-bold uppercase tracking-widest text-xs">Explore</h5>
-                    <ul class="text-slate-400 text-sm space-y-3 font-medium">
-                        <li><a href="#about" class="hover:text-indigo-400 transition">About Me</a></li>
-                        <li><a href="#projects" class="hover:text-indigo-400 transition">Projects Showcase</a></li>
-                        <li><a href="#skills" class="hover:text-indigo-400 transition">Skills & Toolkit</a></li>
-                        <li><a href="#education" class="hover:text-indigo-400 transition">Education Journey</a></li>
-                    </ul>
-                </div>
+        <div class="max-w-6xl mx-auto text-center">
 
-                <div class="space-y-4">
-                    <h5 class="text-white font-bold uppercase tracking-widest text-xs">Based In</h5>
-                    <div
-                        class="glass-card p-6 rounded-2xl border-slate-800 flex items-start gap-4 text-left hover:border-indigo-500/30 transition-colors">
-                        <div class="w-10 h-10 bg-indigo-500/10 rounded-xl flex items-center justify-center shrink-0">
-                            <i class="fas fa-location-arrow text-indigo-400"></i>
-                        </div>
-                        <div>
-                            <p class="text-white font-bold text-sm">Vinchhiya, Gujarat, India.</p>
-                            <p class="text-slate-500 text-xs mt-1">Gujarat, India.</p>
-                        </div>
-                    </div>
-                </div>
+            <h4 class="text-2xl font-bold gradient-text mb-3">
+                Yash Parmar
+            </h4>
+
+            <p class="text-slate-400 text-sm mb-6">
+
+                Web Development | Networking | Technical Support |
+                Industrial Automation
+
+            </p>
+
+            <div class="flex justify-center gap-6 text-xl mb-8">
+
+                <a href="https://www.linkedin.com/in/yash-parmar-02122k5/"
+                    target="_blank" rel="noopener noreferrer"
+                    class="social-icon text-slate-400 hover:text-indigo-400">
+
+                    <i class="fab fa-linkedin"></i>
+
+                </a>
+
+                <a href="https://github.com/yashhp05"
+                    target="_blank" rel="noopener noreferrer"
+                    class="social-icon text-slate-400 hover:text-indigo-400">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+                <a href="mailto:yashhparmar02@gmail.com"
+                    class="social-icon text-slate-400 hover:text-indigo-400">
+
+                    <i class="fas fa-envelope"></i>
+
+                </a>
+
             </div>
 
-            <div
-                class="pt-10 border-t border-slate-800/50 flex flex-col md:flex-row justify-between items-center gap-6">
-                <p class="text-slate-500 text-[10px] uppercase tracking-[0.4em]">
-                    © 2026 Yash Parmar. All rights reserved.
-                </p>
-                <div class="flex items-center gap-2 text-slate-500 text-[10px] font-bold">
-                    <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                    AVAILABLE FOR NEW OPPORTUNITIES
-                </div>
-            </div>
+            <p class="text-slate-500 text-xs">
+                © 2026 Yash Parmar. All Rights Reserved.
+            </p>
+
+            <p class="text-green-400 text-xs font-semibold mt-4">
+                <i class="fas fa-circle text-[8px] mr-2"></i>
+                OPEN TO PROFESSIONAL OPPORTUNITIES
+            </p>
+
         </div>
+
     </footer>
-    <script src="script.js"></script>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // MOBILE MENU
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+        const menuIcon = document.getElementById("menu-icon");
+
+        menuBtn.addEventListener("click", () => {
+
+            mobileMenu.classList.toggle("hidden");
+
+            const isOpen = !mobileMenu.classList.contains("hidden");
+
+            menuIcon.classList.toggle("fa-bars", !isOpen);
+            menuIcon.classList.toggle("fa-times", isOpen);
+
+            menuBtn.setAttribute("aria-expanded", isOpen);
+
+        });
+
+
+        // CLOSE MOBILE MENU AFTER CLICK
+        document.querySelectorAll("#mobile-menu a").forEach(link => {
+
+            link.addEventListener("click", () => {
+
+                mobileMenu.classList.add("hidden");
+
+                menuIcon.classList.add("fa-bars");
+                menuIcon.classList.remove("fa-times");
+
+                menuBtn.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+
+
+        // SCROLL REVEAL ANIMATION
+        const revealElements = document.querySelectorAll(
+            "section, .glass-card"
+        );
+
+        revealElements.forEach(element => {
+            element.classList.add("reveal");
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("active");
+                    observer.unobserve(entry.target);
+
+                }
+
+            });
+
+        }, {
+            threshold: 0.12
+        });
+
+        revealElements.forEach(element => {
+            observer.observe(element);
+        });
+
+
+        // NAVBAR SHADOW ON SCROLL
+        const navbar = document.querySelector("nav");
+
+        window.addEventListener("scroll", () => {
+
+            if (window.scrollY > 40) {
+                navbar.classList.add("navbar-scrolled");
+            } else {
+                navbar.classList.remove("navbar-scrolled");
+            }
+
+        });
+
+    </script>
 
 </body>
-
 </html>
